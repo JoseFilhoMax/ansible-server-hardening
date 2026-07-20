@@ -1,0 +1,7 @@
+---
+- name: Baseline hardening + monitoring agent for all servers
+  hosts: all
+  become: true
+  roles:
+    - hardening
+    - monitoring_agent

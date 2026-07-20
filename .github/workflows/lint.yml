@@ -1,0 +1,27 @@
+name: Ansible Lint
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Ansible + ansible-lint
+        run: pip install ansible ansible-lint
+
+      - name: Syntax check
+        run: ansible-playbook site.yml -i inventory/hosts.ini --syntax-check
+
+      - name: ansible-lint
+        run: ansible-lint site.yml roles/ || true

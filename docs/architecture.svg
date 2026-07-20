@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#38bdf8"/>
+    </marker>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#0f1c33"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <text x="50" y="55" fill="#e2e8f0" font-family="Verdana, Arial, sans-serif" font-size="28" font-weight="bold">Ansible Server Hardening &amp; Provisioning</text>
+  <text x="50" y="80" fill="#94a3b8" font-family="Verdana, Arial, sans-serif" font-size="15">ansible-server-hardening  |  github.com/JoseFilhoMax</text>
+  <line x1="50" y1="95" x2="1150" y2="95" stroke="#1e293b" stroke-width="1"/>
+  <line x1="240" y1="175" x2="330" y2="90" stroke="#38bdf8" stroke-width="2"  marker-end="url(#arrowhead)"/><line x1="240" y1="180" x2="330" y2="180" stroke="#38bdf8" stroke-width="2"  marker-end="url(#arrowhead)"/><line x1="240" y1="195" x2="330" y2="265" stroke="#38bdf8" stroke-width="2"  marker-end="url(#arrowhead)"/><line x1="550" y1="90" x2="660" y2="130" stroke="#38bdf8" stroke-width="2"  marker-end="url(#arrowhead)"/><line x1="550" y1="180" x2="660" y2="160" stroke="#38bdf8" stroke-width="2"  marker-end="url(#arrowhead)"/><line x1="550" y1="265" x2="660" y2="190" stroke="#38bdf8" stroke-width="2"  marker-end="url(#arrowhead)"/>
+  <g><rect x="50" y="150" width="190" height="60" rx="14" fill="#111a2e" stroke="#fbbf24" stroke-width="2"/><text x="145.0" y="174.0" fill="#e2e8f0" font-family="Verdana, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">Control node</text><text x="145.0" y="196.0" fill="#94a3b8" font-family="Verdana, Arial, sans-serif" font-size="12" text-anchor="middle">ansible-playbook site.yml</text></g><g><rect x="330" y="60" width="220" height="60" rx="14" fill="#111a2e" stroke="#38bdf8" stroke-width="2"/><text x="440.0" y="84.0" fill="#e2e8f0" font-family="Verdana, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">Role: hardening</text><text x="440.0" y="106.0" fill="#94a3b8" font-family="Verdana, Arial, sans-serif" font-size="12" text-anchor="middle">SSH, UFW, fail2ban, auditd</text></g><g><rect x="330" y="150" width="220" height="60" rx="14" fill="#111a2e" stroke="#38bdf8" stroke-width="2"/><text x="440.0" y="174.0" fill="#e2e8f0" font-family="Verdana, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">Role: monitoring_agent</text><text x="440.0" y="196.0" fill="#94a3b8" font-family="Verdana, Arial, sans-serif" font-size="12" text-anchor="middle">installs node_exporter</text></g><g><rect x="330" y="240" width="220" height="60" rx="14" fill="#111a2e" stroke="#38bdf8" stroke-width="2"/><text x="440.0" y="264.0" fill="#e2e8f0" font-family="Verdana, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">unattended-upgrades</text><text x="440.0" y="286.0" fill="#94a3b8" font-family="Verdana, Arial, sans-serif" font-size="12" text-anchor="middle">security patches</text></g><g><rect x="660" y="60" width="210" height="220" rx="14" fill="#111a2e" stroke="#34d399" stroke-width="2"/><text x="765.0" y="164.0" fill="#e2e8f0" font-family="Verdana, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle">Target servers
+(web1, web2, ...)</text><text x="765.0" y="186.0" fill="#94a3b8" font-family="Verdana, Arial, sans-serif" font-size="12" text-anchor="middle">inventory/hosts.ini</text></g>
+  <text x="50" y="605" fill="#94a3b8" font-family="Verdana, Arial, sans-serif" font-size="12">CIS-inspired baseline: SSH lockdown, UFW, fail2ban, auto security updates, monitoring agent</text>
+</svg>
